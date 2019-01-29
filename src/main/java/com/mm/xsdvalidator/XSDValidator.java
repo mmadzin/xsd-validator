@@ -95,7 +95,7 @@ public class XSDValidator {
             for (File file : breakSchema.keySet()) {
                 fr.write("  <testcase name=\"" + file.getName() + "\">");
                 fr.newLine();
-                fr.write("    <failure message\"=" + breakSchema.get(file) + "\"/>");
+                fr.write("    <failure message=\"" + breakSchema.get(file) + "\"/>");
                 fr.newLine();
                 fr.write("  </testcase>");
                 fr.newLine();
